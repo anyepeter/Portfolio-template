@@ -13,18 +13,16 @@
   height: 48px;
 }
 
-.navbar-container ul {
+.navbar-container nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: inherit;
+  height: 45px;
 }
 
-.navbar-container li {
+.navbar-container nav * {
   list-style-type: none;
-  height: inherit;
-  display: flex;
-  align-items: center;
+  height: 30px;
   padding-bottom: 12px;
 }
 
@@ -34,6 +32,8 @@
   align-items: center;
   line-height: 24px;
   font-weight: 700;
+  color: #fff;
+  text-decoration: none;
 }
 
 /* styling the main section */
@@ -86,8 +86,15 @@
   color: #fff5e1;
 }
 
-.intro-container img {
+.intro-container ul {
   height: 30px;
   width: 60%;
-  margin-top: 3%;
+  margin-top: 5%;
+  display: flex;
+}
+
+.intro-container li {
+  flex: 1;
+  list-style: none;
+  padding-top: 2%;
 }
