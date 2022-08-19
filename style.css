@@ -177,11 +177,7 @@
   color: #fff;
   text-align: center;
   text-decoration: none;
-  border: 0px;
-}
-
-.recent-work:active {
-  background-color: #e05304;
+  border: 0;
 }
 
 /* styling the project or work section */
@@ -261,7 +257,7 @@
   color: #fff;
   text-decoration: none;
   margin-top: 22px;
-  border: 0px;
+  border: 0;
 }
 
 /* styling the about section */
@@ -315,7 +311,7 @@
   color: #fff;
   background-color: #ff6b00;
   margin-top: 3%;
-  border: 0px;
+  border: 0;
   text-align: center;
   line-height: 2rem;
   text-decoration: none;
@@ -360,12 +356,27 @@
   font-size: 30px;
 }
 
-.recent-work button:hover, .work-container > div button:hover, .about-container div > button:hover {
+.recent-work button:hover {
   color: #ff6b00;
   border: 1px solid #f55800;
   background: #fff5e1;
 }
-.recent-work button:focus, .work-container > div button:focus, .about-container div > button:focus {
-  background-color: #E05304;
-  color: #F4F1F0;
+
+.work-container > div button:hover {
+  color: #ff6b00;
+  border: 1px solid #f55800;
+  background: #fff5e1;
+}
+
+.about-container div > button:hover {
+  color: #ff6b00;
+  border: 1px solid #f55800;
+  background: #fff5e1;
+}
+
+body section.recent-work button:focus,
+body section.work-container > div button:focus,
+body section.about-container div > button:focus {
+  background-color: #e05304;
+  color: #f4f1f0;
 }
