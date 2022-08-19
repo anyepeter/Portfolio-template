@@ -108,6 +108,7 @@
   padding: 20% 24px;
   display: flex;
   flex-direction: column;
+  background-color: #fff;
 }
 
 .recent-work h2 {
@@ -167,7 +168,7 @@
   list-style: none;
 }
 
-.recent-work a {
+.recent-work button {
   width: 40%;
   height: 48px;
   padding: 12px;
@@ -176,6 +177,7 @@
   color: #fff;
   text-align: center;
   text-decoration: none;
+  border: 0px;
 }
 
 .recent-work:active {
@@ -193,7 +195,7 @@
   gap: 2%;
 }
 
-.work-container > article {
+.work-container > div {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -204,7 +206,7 @@
   background-repeat: no-repeat;
 }
 
-.work-container > article h3 {
+.work-container > div h3 {
   font-size: 32px;
   font-weight: 400;
   margin-top: 74px;
@@ -216,7 +218,7 @@
   padding: 0 16px 0 20px;
 }
 
-.work-container > article p {
+.work-container > div p {
   font-size: 16px;
   font-weight: 400;
   font-family: 'Inter', sans-serif;
@@ -228,7 +230,7 @@
   margin-top: 24px;
 }
 
-.work-container > article ul {
+.work-container > div ul {
   display: flex;
   width: 100%;
   padding: 0 16px 0 20px;
@@ -237,7 +239,7 @@
   gap: 15px;
 }
 
-.work-container > article li {
+.work-container > div li {
   list-style-type: none;
   padding: 10px;
   color: #fff;
@@ -247,7 +249,7 @@
   background-color: rgba(255, 255, 255, 0.24);
 }
 
-.work-container > article a {
+.work-container > div button {
   height: 50px;
   width: 100%;
   text-align: center;
@@ -259,6 +261,7 @@
   color: #fff;
   text-decoration: none;
   margin-top: 22px;
+  border: 0px;
 }
 
 /* styling the about section */
@@ -267,10 +270,10 @@
   display: flex;
   flex-direction: column;
   height: auto;
-  margin: 37% 0 0 0;
+  margin: 64% 0 0 0;
 }
 
-.about-container article {
+.about-container div {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -286,7 +289,7 @@
   padding: 148px 24px 0 24px;
 }
 
-.about-container article h2 {
+.about-container div h2 {
   width: 100%;
   height: 79px;
   font-family: 'Crete Round', serif;
@@ -297,7 +300,7 @@
   color: #ff6b00;
 }
 
-.about-container article p {
+.about-container div p {
   width: 90%;
   height: 148px;
   font-family: 'Inter', sans-serif;
@@ -306,18 +309,19 @@
   line-height: 24px;
 }
 
-.about-container article > a {
+.about-container div > button {
   width: 40%;
   height: 42px;
   color: #fff;
   background-color: #ff6b00;
   margin-top: 3%;
+  border: 0px;
   text-align: center;
   line-height: 2rem;
   text-decoration: none;
 }
 
-.about-container article hr {
+.about-container div hr {
   width: 100%;
   margin-top: 75%;
   color: #fff;
@@ -332,7 +336,7 @@
   height: 120vh;
 }
 
-.about-container article > ul {
+.about-container div > ul {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -340,7 +344,7 @@
   width: inherit;
 }
 
-.about-container article li {
+.about-container div li {
   width: 100%;
   text-align: center;
   list-style: none;
@@ -351,17 +355,17 @@
   font-weight: 400;
 }
 
-.about-container article li .frames-title {
+.about-container div li .frames-title {
   height: 50px;
   font-size: 30px;
 }
 
-.recent-work a:hover {
+.recent-work button:hover, .work-container > div button:hover, .about-container div > button:hover {
   color: #ff6b00;
   border: 1px solid #f55800;
   background: #fff5e1;
 }
-
-h6 {
-  display: none;
+.recent-work button:focus, .work-container > div button:focus, .about-container div > button:focus {
+  background-color: #E05304;
+  color: #F4F1F0;
 }
