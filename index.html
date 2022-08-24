@@ -208,13 +208,16 @@
         </p>
         <form action="https://formspree.io/f/xeqdogov" method="post">
                 <div>
-                    <input type="text" name="fullname" placeholder="Full name" max="30" required class="formel">
+                    <input type="text" name="fullname" placeholder="Full name" maxlength="30" required class="formel">
                 </div>
                 <div>
                     <input type="email" name="email" placeholder="Email address" required class="formel">
                 </div>
                 <div>
-                    <input type="textarea" name="message" placeholder="Enter your text" max="500" required class="textarea">
+                   
+                
+                <textarea  name="message" maxlength="500" class="textarea" placeholder="Enter your text" required>
+                </textarea>
                 </div>
 
                 <button type="submit">
