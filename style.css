@@ -380,3 +380,8 @@ body section.about-container div > button:focus {
   background-color: #e05304;
   color: #f4f1f0;
 }
+
+footer {
+  width : 100%;
+  height: 100vh;
+}
