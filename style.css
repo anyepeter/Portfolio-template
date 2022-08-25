@@ -391,7 +391,7 @@ footer div.icons > ul > li {
 footer div.icons h2.attract {
   font-family: 'Inter', sans-serif;
   font-size: 32px;
-  font-weight: 700;
+  font-weight:bolder;
   line-height: 44px;
   text-align: center;
   color: #172b4d;
