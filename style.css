@@ -388,7 +388,7 @@ footer div.icons > ul > li {
   padding: 1rem 0;
 }
 
-footer div.icons p.attract {
+footer div.icons h2.attract {
   font-family: 'Inter', sans-serif;
   font-size: 32px;
   font-weight: 700;
@@ -420,15 +420,17 @@ form {
   height: 200px;
   margin-bottom: 36px;
   font-size: 20px;
+  padding-left: 10px;
 }
 
 footer div.icons form > button {
-  padding: 20px 50px;
+  padding: 20px 5px;
+  font-size: 20px;
   background-color: #ff6b00;
   color: #fff;
   border: none;
   text-align: center;
-  width: 40%;
+  width: 50%;
   margin-left: 27%;
   margin-bottom: 60px;
 }
