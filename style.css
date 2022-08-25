@@ -100,6 +100,12 @@
 }
 
 /* styling the recent work container */
+footer > hr {
+  background-color: #0d151e;
+  width: 35%;
+  height: 5px;
+  margin-left: 32%;
+}
 
 .recent-work {
   height: 112vh;
@@ -356,19 +362,90 @@
   font-size: 30px;
 }
 
-.recent-work button:hover {
-  color: #ff6b00;
-  border: 1px solid #f55800;
-  background: #fff5e1;
+footer {
+  width: 100%;
+  height: 100vh;
+  padding: 120px 24px;
 }
 
-.work-container > div button:hover {
-  color: #ff6b00;
-  border: 1px solid #f55800;
-  background: #fff5e1;
+.icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1.5rem;
 }
 
-.about-container div > button:hover {
+footer div.icons > ul {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+footer div.icons > ul > li {
+  list-style-type: none;
+  padding: 1rem 0;
+}
+
+footer div.icons h2.attract {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: bolder;
+  line-height: 44px;
+  text-align: center;
+  color: #172b4d;
+  margin-bottom: 1rem;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.formel {
+  width: 100%;
+  margin-bottom: 24px;
+  height: 80px;
+  font-size: 20px;
+  font-family: 'Inter', sans-serif;
+  padding-left: 10px;
+  border: none;
+  border-bottom: 1px solid #dbd8d7;
+}
+
+.textarea {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 36px;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+footer div.icons form > button {
+  padding: 20px 5px;
+  font-size: 20px;
+  background-color: #ff6b00;
+  color: #fff;
+  border: none;
+  text-align: center;
+  width: 50%;
+  margin-left: 27%;
+  margin-bottom: 60px;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  color: #dfe1e6;
+  margin-bottom: 20px;
+}
+
+.recent-work button:hover,
+.work-container > div button:hover,
+.about-container div > button:hover,
+div.icons form > button:hover {
   color: #ff6b00;
   border: 1px solid #f55800;
   background: #fff5e1;
@@ -376,7 +453,8 @@
 
 body section.recent-work button:focus,
 body section.work-container > div button:focus,
-body section.about-container div > button:focus {
+body section.about-container div > button:focus,
+footer div.icons form > button:focus {
   background-color: #e05304;
   color: #f4f1f0;
 }
