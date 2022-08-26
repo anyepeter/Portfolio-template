@@ -732,6 +732,13 @@ footer div.icons form > button:focus {
     position: fixed;
   }
 
+  .line {
+    margin-top: 50px;
+    position: relative;
+    left: -25%;
+    width: 80%;
+  }
+
   .navbar-container nav {
     height: inherit;
   }
@@ -790,6 +797,7 @@ footer div.icons form > button:focus {
     line-height: 2rem;
     margin-left: 90px;
   }
+
 
   section.work-container div p {
     font-size: 20px;
@@ -936,11 +944,12 @@ footer div.icons form > button:focus {
 
   section.about-container {
     margin: 10% 0 0 0;
+    background-color: #262626;
   }
 
   section.about-container hr {
-    margin: 245px 200px;
-    width: 70%;
+    margin: 245px 2px 0 89px;
+    width: 85%;
   }
 
   section.about-container .skill-section {
