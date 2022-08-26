@@ -43,6 +43,18 @@ body {
   font-weight: 700;
   color: #fff;
   text-decoration: none;
+  animation-name: slidein;
+  animation-duration: 3s;
+}
+
+@keyframes slidein {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(90deg);
+  }
 }
 
 /* styling the main section */
@@ -216,6 +228,19 @@ section.recent-work ul {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  animation-name: slidein;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
 }
 
 .work-container > div h3 {
@@ -462,6 +487,8 @@ div.icons form > button:hover {
   color: #ff6b00;
   border: 1px solid #f55800;
   background: #fff5e1;
+  transition: background-color ease-in;
+  transition-duration: 1s;
 }
 
 body section.recent-work button:focus,
