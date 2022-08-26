@@ -43,8 +43,16 @@ body {
   font-weight: 700;
   color: #fff;
   text-decoration: none;
+  animation-name: slidein;
+  animation-duration: 3s;
 }
-
+@keyframes slidein {
+  from{
+    transform: rotate(360deg);
+  } to{
+    transform: rotate(90deg);
+  }
+}
 /* styling the main section */
 .intro-container {
   background-color: #1c1a19;
@@ -216,8 +224,17 @@ section.recent-work ul {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  animation-name: slidein;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
 }
-
+@keyframes slidein {
+  from{
+    margin-left: 100%;
+  } to{
+    margin-left: 0%;
+  }
+}
 .work-container > div h3 {
   font-size: 32px;
   font-weight: 400;
