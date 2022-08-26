@@ -46,13 +46,17 @@ body {
   animation-name: slidein;
   animation-duration: 3s;
 }
+
 @keyframes slidein {
-  from{
+  from {
     transform: rotate(360deg);
-  } to{
+  }
+
+  to {
     transform: rotate(90deg);
   }
 }
+
 /* styling the main section */
 .intro-container {
   background-color: #1c1a19;
@@ -228,13 +232,17 @@ section.recent-work ul {
   animation-duration: 2s;
   animation-delay: 0.5s;
 }
+
 @keyframes slidein {
-  from{
+  from {
     margin-left: 100%;
-  } to{
+  }
+
+  to {
     margin-left: 0%;
   }
 }
+
 .work-container > div h3 {
   font-size: 32px;
   font-weight: 400;
