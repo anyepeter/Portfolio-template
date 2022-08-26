@@ -5,12 +5,21 @@
   padding: 0;
 }
 
+body {
+  padding: 0;
+  margin: 0;
+}
+
 /* styling the navbar */
 .navbar-container {
   background-color: #3c3a39;
   color: white;
   padding: 7px 24px;
   height: 48px;
+}
+
+.navbar-container nav ul {
+  display: none;
 }
 
 .navbar-container nav {
@@ -41,10 +50,11 @@
   background-color: #1c1a19;
   background-image: url("Images/Icons/illustration-header-mobile.png");
   height: 100vh;
+  width: 100vw;
   background-repeat: no-repeat;
   background-size: 40%;
-  background-position: 101%;
-  background-position-y: 130%;
+  background-position: 100%;
+  background-position-y: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -86,10 +96,10 @@
   color: #fff5e1;
 }
 
-.intro-container ul {
+section.intro-container ul {
   height: 30px;
   width: 60%;
-  margin-top: 5%;
+  margin-top: 15%;
   display: flex;
 }
 
@@ -152,14 +162,14 @@ footer > hr {
   width: auto;
 }
 
-.recent-work .text {
+.recent-work p.text {
   line-height: 1.5rem;
   font-size: 16px;
   font-family: 'Inter', sans-serif;
-  font-weight: 600;
+  font-weight: 500;
 }
 
-.recent-work ul {
+section.recent-work ul {
   display: flex;
   width: 90%;
   justify-content: space-between;
@@ -296,7 +306,7 @@ footer > hr {
   height: 79px;
   font-family: 'Crete Round', serif;
   font-weight: 400;
-  font-size: 72px;
+  font-size: 64px;
   line-height: 1.5rem;
   letter-spacing: 0.1rem;
   color: #ff6b00;
@@ -309,6 +319,7 @@ footer > hr {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  margin-top: 12%;
 }
 
 .about-container div > button {
@@ -325,7 +336,7 @@ footer > hr {
 
 .about-container div hr {
   width: 100%;
-  margin-top: 75%;
+  margin-top: 100%;
   color: #fff;
 }
 
@@ -357,9 +368,11 @@ footer > hr {
   font-weight: 400;
 }
 
-.about-container div li .frames-title {
+.about-container div li.frames-title {
   height: 50px;
   font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 footer {
@@ -457,4 +470,633 @@ body section.about-container div > button:focus,
 footer div.icons form > button:focus {
   background-color: #e05304;
   color: #f4f1f0;
+}
+
+@media (min-width: 320px) {
+  .about-container {
+    margin: 39% 0 0 0;
+  }
+
+  .about-container div hr {
+    margin-top: 109%;
+  }
+
+  .about-container .skill-section {
+    height: 110vh;
+  }
+
+  footer div.icons h2.attract {
+    padding: 0% 4%;
+  }
+
+  .about-container div p {
+    margin-top: 10%;
+    margin-bottom: 10px;
+  }
+
+  .about-container div h2 {
+    height: 58px;
+    margin-top: 5%;
+  }
+}
+
+@media (min-width: 470px) {
+  .navbar-container {
+    height: 55px;
+  }
+
+  .navbar-container nav {
+    height: 50px;
+  }
+
+  .logo-item {
+    font-size: 30px;
+  }
+
+  .intro-container ul {
+    margin-top: 52px;
+    width: 70%;
+    height: 50px;
+  }
+
+  .intro-container li {
+    width: 60%;
+    margin: 5px;
+    height: 30px;
+  }
+
+  .intro-container li img {
+    width: 60%;
+  }
+
+  .about-container div hr {
+    margin-top: 415px;
+  }
+
+  .about-container div p {
+    font-size: 25px;
+    line-height: 2.5rem;
+  }
+
+  .about-container div h2 {
+    font-size: 83px;
+  }
+
+  .intro-container h1 {
+    letter-spacing: 0.37px;
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 4rem;
+    margin-bottom: 20px;
+  }
+
+  section.intro-container h2 {
+    font-size: 30px;
+    line-height: 2rem;
+    margin-bottom: 20px;
+  }
+
+  section.intro-container p {
+    font-size: 20px;
+    line-height: 1.8rem;
+  }
+
+  section.recent-work h2 {
+    font-size: 50px;
+  }
+
+  section.recent-work h3 {
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+
+  section.recent-work p.text {
+    font-size: 20px;
+    margin-bottom: 25px;
+    line-height: 1.7rem;
+  }
+
+  .recent-work ul {
+    width: 80%;
+    line-height: 1rem;
+    font-size: 23px;
+  }
+
+  .recent-work button,
+  .work-container > div button {
+    letter-spacing: 0.2rem;
+    font-size: 23px;
+  }
+
+  section.work-container div h3 {
+    font-size: 39px;
+    line-height: 2.5rem;
+  }
+
+  section.work-container div p {
+    font-size: 20px;
+  }
+
+  .work-container > div ul li {
+    font-size: 23px;
+  }
+
+  .about-container div > button {
+    font-size: 22px;
+    padding: 10px;
+    margin-top: 40%;
+    height: 66px;
+  }
+
+  footer div.icons > ul li {
+    width: 100%;
+  }
+
+  section.about-container .skill-section ul li {
+    font-size: 30px;
+  }
+
+  footer div.icons form > button {
+    padding: 20px 2px;
+    font-size: 30px;
+  }
+
+  footer div.icons > ul {
+    width: 60%;
+  }
+
+  footer div.icons > ul li a {
+    width: 100%;
+  }
+
+  footer div.icons > ul li a img {
+    width: 60%;
+  }
+}
+
+@media (min-width: 600px) {
+  .intro-container {
+    background-size: 35%;
+  }
+
+  .intro-container p {
+    font-size: 25px;
+    line-height: 2rem;
+  }
+
+  .recent-work {
+    margin-bottom: 128px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .recent-work p.text {
+    font-size: 23px;
+    line-height: 2.2rem;
+  }
+
+  .recent-work ul {
+    width: 70%;
+    font-size: 28px;
+    height: 50px;
+  }
+
+  .recent-work ul li {
+    height: inherit;
+    line-height: 2rem;
+  }
+
+  .recent-work button {
+    margin-top: 30px;
+  }
+
+  .work-container,
+  .about-container div {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  section.about-container {
+    margin: 20% 0 0 0;
+  }
+
+  .about-container div button {
+    margin-top: 120px;
+  }
+
+  .about-container div {
+    background-position-y: 100%;
+    padding: 100px 24px 0 24px;
+    background-size: 35%;
+  }
+
+  .about-container .skill-section {
+    padding: 5px 24px 0 24px;
+    display: flex;
+    flex-direction: column;
+    background-image: none;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .about-container div > ul {
+    flex: 1;
+    height: inherit;
+  }
+
+  .about-container div li {
+    width: 100%;
+    text-align: center;
+    list-style: none;
+    margin: 2%;
+    height: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+  }
+
+  .about-container div li.frames-title {
+    height: 20px;
+    font-size: 40px;
+    margin-bottom: 25px;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-container {
+    padding: 0 250px 0 130px;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+  }
+
+  .line {
+    margin-top: 50px;
+    position: relative;
+    left: -25%;
+    width: 80%;
+  }
+
+  .navbar-container nav {
+    height: inherit;
+  }
+
+  .navbar-container nav ul {
+    display: flex;
+    width: 50%;
+    height: inherit;
+    justify-content: space-between;
+  }
+
+  .navbar-container nav li {
+    font-size: 15px;
+    font-weight: 600;
+    height: 40px;
+    padding: 30px;
+  }
+
+  .navbar-container nav li a {
+    height: inherit;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .navbar-container .logo-item {
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .navbar-container nav .handberga {
+    display: none;
+  }
+
+  section.intro-container {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 165px 40% 0 3%;
+    gap: 30px;
+    background-image: url("Images/Icons/background.png");
+    background-position: 100%;
+    background-size: 350px;
+    background-position-y: 230px;
+  }
+
+  .intro-text {
+    width: 90%;
+  }
+
+  .intro-icons {
+    width: 10%;
+  }
+
+  section.about-container p {
+    width: 50%;
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 2rem;
+    margin-left: 90px;
+  }
+
+  section.work-container div p {
+    font-size: 20px;
+    padding-right: 50px;
+  }
+
+  section.about-container h2 {
+    margin-left: 90px;
+  }
+
+  section.intro-container .intro-text h1 {
+    font-size: 57px;
+    width: 100%;
+  }
+
+  section.intro-container .intro-text h2 {
+    font-size: 32px;
+    width: 100%;
+  }
+
+  section.intro-container .intro-text p {
+    font-size: 20px;
+    width: 100%;
+  }
+
+  section.intro-container .intro-icons ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: inherit;
+    width: 100%;
+    gap: 10px;
+  }
+
+  footer div.icons > ul li a img {
+    width: 28px;
+  }
+
+  section.intro-container .intro-icons li {
+    height: inherit;
+    margin-top: 7px;
+    width: 100%;
+  }
+
+  section.intro-container .intro-icons li img {
+    width: 50%;
+  }
+
+  section.recent-work {
+    margin-bottom: 0%;
+  }
+
+  section.about-container div {
+    background-image: url("/Images/abvout.png");
+    background-position: 533px;
+    background-size: 697px;
+    background-position-y: 257px;
+    background-color: #262626;
+  }
+
+  section.recent-work div.recent-blog {
+    display: flex;
+    gap: 20px;
+  }
+
+  section.recent-work div.recent-blog div {
+    width: 50%;
+    height: 50vh;
+  }
+
+  section.recent-work div.recent-image img {
+    width: 100%;
+    height: 60vh;
+  }
+
+  section.recent-work div.recent-image {
+    width: 100%;
+  }
+
+  section.about-container .skill-section li {
+    height: 50px;
+    font-size: 20px;
+  }
+
+  section.recent-work div.recent-text li {
+    margin: 5px;
+    font-size: 20px;
+  }
+
+  .recent-text button {
+    width: 40%;
+    font-size: 16px;
+    padding: 0;
+    margin-top: 5px;
+  }
+
+  .recent-work p.text {
+    font-size: 20px;
+    line-height: 2.2rem;
+  }
+
+  section.work-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 6px;
+    gap: 30px;
+    padding-bottom: 0;
+  }
+
+  section.work-container h3 {
+    font-size: 25px;
+  }
+
+  section.about-container button {
+    width: 15%;
+    margin-left: 90px;
+    font-size: 16px;
+    margin-top: 100px;
+  }
+
+  section.about-container .skill-section ul {
+    width: 100%;
+  }
+
+  section.work-container div button,
+  section.work-container div.gridbox h2,
+  section.work-container div.gridbox p,
+  section.work-container div.gridbox ul {
+    display: none;
+  }
+
+  footer div.icons form > button {
+    margin-left: 0;
+    font-size: 20px;
+  }
+
+  section.work-container div.gridbox {
+    background-image: url("Images/Placeholder.png");
+  }
+
+  section.work-container div.gridbox button {
+    display: block;
+    margin-top: 200px;
+  }
+
+  section.about-container {
+    margin: 10% 0 0 0;
+    background-color: #262626;
+  }
+
+  section.about-container hr {
+    margin: 245px 2px 0 89px;
+    width: 85%;
+  }
+
+  section.about-container .skill-section {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  section.about-container .skill-section li.frames-title {
+    font-size: 25px;
+  }
+
+  footer div.icons {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    padding: 0 50px;
+  }
+
+  footer div.icons h2.attract {
+    width: 100%;
+    height: 100px;
+    padding: 10px 10px  0 2px;
+    font-size: 30px;
+    line-height: 2.5rem;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar-container {
+    padding: 0 255px 0 140px;
+  }
+
+  .navbar-container nav li a {
+    font-size: 20px;
+  }
+
+  section.intro-container .intro-text h1 {
+    width: 400px;
+    font-size: 72px;
+    line-height: 5rem;
+    margin-bottom: 50px;
+  }
+
+  section.about-container h2 {
+    margin-left: 200px;
+    font-size: 80px;
+  }
+
+  section.intro-container .intro-text h2 {
+    font-size: 45px;
+  }
+
+  section.recent-work {
+    padding: 120px 200px 0 200px;
+    margin-bottom: 0;
+  }
+
+  section.recent-work div.recent-image {
+    padding-left: 150px;
+  }
+
+  section.recent-work div.recent-text * {
+    width: 60%;
+  }
+
+  section.recent-work div.recent-text ul {
+    width: 50%;
+  }
+
+  section.recent-work div.recent-text ul li {
+    line-height: 1rem;
+    width: auto;
+  }
+
+  section.about-container button {
+    margin-left: 200px;
+    width: 14%;
+  }
+
+  section.recent-work div.recent-text button {
+    margin-top: 20px;
+    width: 20%;
+  }
+
+  section.work-container {
+    padding: 0 200px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  section.about-container p {
+    width: 30%;
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 2.5rem;
+    margin-left: 200px;
+  }
+
+  footer div.icons {
+    padding: 0 200px;
+  }
+
+  section.intro-container .intro-text p {
+    width: 550px;
+    font-size: 25px;
+    line-height: 2.5rem;
+  }
+
+  footer div.icons > ul li a img {
+    width: 15%;
+  }
+
+  section.intro-container .intro-icons li img {
+    width: 40%;
+  }
+
+  section.intro-container {
+    background-position: 100%;
+    background-size: 550px;
+    background-position-y: 30px;
+  }
+
+  section.about-container div {
+    background-image: url("/Images/abvout.png");
+    background-position: 100%;
+    background-size: 50%;
+    background-position-y: 50px;
+  }
+
+  section.about-container hr {
+    margin: 245px 200px;
+    width: 80%;
+  }
+
+  .line {
+    margin-top: 50px;
+    position: relative;
+    left: -25%;
+    width: 80%;
+  }
+}
+
+@media (min-width: 1400px) {
+  section.intro-container {
+    background-position: 100%;
+    background-size: 900px;
+    background-position-y: 30px;
+    width: 100%;
+  }
 }
