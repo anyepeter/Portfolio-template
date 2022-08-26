@@ -479,6 +479,8 @@ div.icons form > button:hover {
   color: #ff6b00;
   border: 1px solid #f55800;
   background: #fff5e1;
+  transition: background-color ease-in;
+  transition-duration: 1s;
 }
 
 body section.recent-work button:focus,
