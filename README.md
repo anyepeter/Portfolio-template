@@ -27,6 +27,9 @@ You will need the following;
 ### Install
 Open the project in your code editor
 
+## Demo 
+Feel free to visit the site here [https://anyepeter.github.io/Portfolio-template/](https://anyepeter.github.io/Portfolio-template/)
+
 ## Authors
 ANYE PEETR
 
