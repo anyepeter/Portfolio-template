@@ -200,7 +200,7 @@ section.recent-work ul {
   width: 40%;
   height: 48px;
   padding: 12px;
-  background: #ff6b00;
+  background: #e05304;
   margin: 12px 0;
   color: #fff;
   text-align: center;
@@ -294,7 +294,7 @@ section.recent-work ul {
   font-size: 17px;
   font-weight: 700;
   font-family: 'Inter', sans-serif;
-  background-color: #ff6b00;
+  background-color: #e05304;
   color: #fff;
   text-decoration: none;
   margin-top: 22px;
@@ -351,7 +351,7 @@ section.recent-work ul {
   width: 40%;
   height: 42px;
   color: #fff;
-  background-color: #ff6b00;
+  background-color: #e05304;
   margin-top: 3%;
   border: 0;
   text-align: center;
@@ -464,7 +464,7 @@ form {
 footer div.icons form > button {
   padding: 20px 5px;
   font-size: 20px;
-  background-color: #ff6b00;
+  background-color: #e05304;
   color: #fff;
   border: none;
   text-align: center;
@@ -484,9 +484,9 @@ footer div.icons form > button {
 .work-container > div button:hover,
 .about-container div > button:hover,
 div.icons form > button:hover {
-  color: #ff6b00;
-  border: 1px solid #f55800;
-  background: #fff5e1;
+  color: #e05304;
+  border: 1px solid#e05304;
+  background: #fff;
   transition: background-color ease-in;
   transition-duration: 1s;
 }
@@ -496,7 +496,7 @@ body section.work-container > div button:focus,
 body section.about-container div > button:focus,
 footer div.icons form > button:focus {
   background-color: #e05304;
-  color: #f4f1f0;
+  color: #fff;
 }
 
 @media (min-width: 320px) {
