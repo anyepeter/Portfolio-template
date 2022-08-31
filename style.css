@@ -724,7 +724,7 @@ footer div.icons form > button:focus {
     flex-direction: column;
     background-image: none;
     width: 100%;
-    height: 100vh;
+    height: 50vh;
   }
 
   .about-container div > ul {
@@ -982,6 +982,8 @@ footer div.icons form > button:focus {
   section.about-container .skill-section {
     flex-direction: row;
     justify-content: flex-start;
+    align-items: center;
+    margin-top: -345px;
   }
 
   section.about-container .skill-section li.frames-title {
