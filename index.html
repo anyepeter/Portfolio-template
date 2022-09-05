@@ -22,20 +22,20 @@
         <nav>
             <a class="logo-item" href="index.html">Peter chendi</a>
 
-            <img class="handberga" src="Images/Icons/Union.png" alt="menu">
+            <img id="handberga-menu"  class="handberga" src="Images/Icons/Union.png" alt="menu">
         
-            <ul>
-                <i class="bi bi-x-lg"></i>
-                <li><a>Portfolio</a></li>
-                <li><a>About</a></li>
-                <li><a>Contact</a></li>
+            <ul id="menu">
+                <i id="exit" class="bi bi-x-lg"></i>
+                <li><a href="#home">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="contact">Contact</a></li>
                 <li><a><img src="Images/Icons/Button/Tertiary/Icons/mail.png" alt="email icon"></a></li>
             </ul>
         
         </nav>
     </header>
 
-    <section class="intro-container">
+    <section id="home" class="intro-container">
         <div class="intro-text">
             <h1>Hey there. I'm Chendi</h1>
             <h2>I'am a Software Developer</h2>
@@ -177,7 +177,7 @@
 
     </section>
 
-    <section class="about-container">
+    <section id="about" class="about-container">
         <div>
             <h2>About me</h2>
             <p>Hello I'm a software developer! I can help you
@@ -217,7 +217,7 @@
         </div>
     </section>
 
-    <footer>
+    <footer id="contact">
         <div class="icons">
             <h2 class="attract">
                 I'm always interested in hearing about new projects, so if you'd like to chat please get in touch
@@ -257,6 +257,7 @@
         </div>
 
     </footer>
+<script src="script.js"></script>
 </body>
 
 </html>
