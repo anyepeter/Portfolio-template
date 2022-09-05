@@ -22,8 +22,7 @@ body {
   position: absolute;
   top: 0;
   font-size: 32px;
-  display: flex;
-  flex-direction: column;
+  display: none;
   gap: 10px;
   left: 0;
   font-family: 'Inter', sans-serif;
