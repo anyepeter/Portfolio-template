@@ -90,7 +90,7 @@ body {
 .bi {
   position: relative;
   top: -20px;
-  width: 20px;
+  width: 21px;
 }
 
 .image-link {
@@ -189,7 +189,6 @@ section.intro-container ul {
   margin-top: 15%;
   display: flex;
 }
-
 
 /* styling the recent work container */
 footer > hr {
