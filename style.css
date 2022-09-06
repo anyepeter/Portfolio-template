@@ -11,6 +11,40 @@ body {
 }
 
 /* styling the navbar */
+.intro-container li {
+  flex: 1;
+  list-style: none;
+  padding-top: 2%;
+}
+
+.recent-work li {
+  border: 1px solid #8993a4;
+  align-items: center;
+  padding: 10px 12px;
+  list-style: none;
+}
+
+.work-container > div li {
+  list-style-type: none;
+  padding: 10px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  background-color: rgba(255, 255, 255, 0.24);
+}
+
+.about-container div li {
+  width: 100%;
+  text-align: center;
+  list-style: none;
+  margin: 2%;
+  height: 30px;
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+}
+
 .navbar-container {
   background-color: #3c3a39;
   color: white;
@@ -18,7 +52,48 @@ body {
   height: 48px;
 }
 
+.navbar-container nav ul li.menu-list {
+  display: flex;
+  align-items: flex-end;
+  width: 20%;
+  border-bottom: 0;
+  padding-left: 85%;
+}
+
 .navbar-container nav ul {
+  position: absolute;
+  top: 0;
+  font-size: 32px;
+  gap: 10px;
+  left: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #3c3a39;
+  height: 100vh;
+  padding: 10% 5%;
+  width: 100%;
+  display: none;
+}
+
+.navbar-container nav ul li {
+  border-bottom: 1px solid #6f6c6b;
+  margin: 10px;
+  height: 60px;
+  width: 100%;
+  padding-left: 10px;
+}
+
+.navbar-container nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.bi {
+  position: relative;
+  top: -20px;
+  width: 21px;
+}
+
+.image-link {
   display: none;
 }
 
@@ -115,18 +190,12 @@ section.intro-container ul {
   display: flex;
 }
 
-.intro-container li {
-  flex: 1;
-  list-style: none;
-  padding-top: 2%;
-}
-
 /* styling the recent work container */
 footer > hr {
   background-color: #0d151e;
   width: 35%;
   height: 5px;
-  margin-left: 32%;
+  margin-left: 0;
 }
 
 .recent-work {
@@ -187,13 +256,6 @@ section.recent-work ul {
   justify-content: space-between;
   height: 40px;
   margin-bottom: 12px;
-}
-
-.recent-work li {
-  border: 1px solid #8993a4;
-  align-items: center;
-  padding: 10px 12px;
-  list-style: none;
 }
 
 .recent-work button {
@@ -274,16 +336,6 @@ section.recent-work ul {
   justify-content: flex-start;
   margin-top: 24px;
   gap: 15px;
-}
-
-.work-container > div li {
-  list-style-type: none;
-  padding: 10px;
-  color: #fff;
-  font-size: 15px;
-  font-weight: 500;
-  font-family: 'Inter', sans-serif;
-  background-color: rgba(255, 255, 255, 0.24);
 }
 
 .work-container > div button {
@@ -380,17 +432,6 @@ section.recent-work ul {
   flex-direction: column;
   margin: 3%;
   width: inherit;
-}
-
-.about-container div li {
-  width: 100%;
-  text-align: center;
-  list-style: none;
-  margin: 2%;
-  height: 30px;
-  font-family: 'Inter', sans-serif;
-  font-size: 22px;
-  font-weight: 400;
 }
 
 .about-container div li.frames-title {
@@ -770,32 +811,59 @@ footer div.icons form > button:focus {
     height: inherit;
   }
 
-  .navbar-container nav ul {
-    display: flex;
-    width: 50%;
-    height: inherit;
-    justify-content: space-between;
-  }
-
-  .navbar-container nav li {
-    font-size: 15px;
-    font-weight: 600;
-    height: 40px;
-    padding: 30px;
-  }
-
   .navbar-container nav li a {
     height: inherit;
     font-family: 'Inter', sans-serif;
   }
 
   .navbar-container .logo-item {
-    font-size: 20px;
+    font-size: 32px;
     font-family: 'Inter', sans-serif;
   }
 
   .navbar-container nav .handberga {
+    display: none !important;
+  }
+
+  .navbar-container nav ul {
+    position: inherit;
+    top: 110px;
+    font-size: 32px;
+    gap: 10px;
+    left: 0;
+    display: flex !important;
+    font-family: 'Inter', sans-serif;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 0% 0%;
+    width: 50%;
+    height: inherit;
+    justify-content: space-between;
+  }
+
+  .navbar-container nav ul li {
+    border-bottom: none;
+    margin: 10px;
+    height: 0;
+    width: inherit;
+    padding: 20px;
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .navbar-container nav ul li.menu-list {
+    display: flex;
+    align-items: flex-end;
+    width: 20%;
+    border-bottom: 0;
+    padding-left: 0;
+  }
+
+  .bi {
     display: none;
+  }
+
+  .image-link {
+    display: block;
   }
 
   section.intro-container {
