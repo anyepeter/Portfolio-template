@@ -811,33 +811,59 @@ footer div.icons form > button:focus {
     height: inherit;
   }
 
-  .navbar-container nav ul {
-    display: flex;
-    width: 50%;
-    height: inherit;
-    justify-content: space-between;
-    position: inherit;
-  }
-
-  .navbar-container nav li {
-    font-size: 15px;
-    font-weight: 600;
-    height: 40px;
-    padding: 30px;
-  }
-
   .navbar-container nav li a {
     height: inherit;
     font-family: 'Inter', sans-serif;
   }
 
   .navbar-container .logo-item {
-    font-size: 20px;
+    font-size: 32px;
     font-family: 'Inter', sans-serif;
   }
 
   .navbar-container nav .handberga {
+    display: none !important;
+  }
+
+  .navbar-container nav ul {
+    position: inherit;
+    top: 110px;
+    font-size: 32px;
+    gap: 10px;
+    left: 0;
+    display: flex !important;
+    font-family: 'Inter', sans-serif;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 0% 0%;
+    width: 50%;
+    height: inherit;
+    justify-content: space-between;
+  }
+
+  .navbar-container nav ul li {
+    border-bottom: none;
+    margin: 10px;
+    height: 0;
+    width: inherit;
+    padding: 20px;
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .navbar-container nav ul li.menu-list {
+    display: flex;
+    align-items: flex-end;
+    width: 20%;
+    border-bottom: 0;
+    padding-left: 0;
+  }
+
+  .bi {
     display: none;
+  }
+
+  .image-link {
+    display: block;
   }
 
   section.intro-container {
