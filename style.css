@@ -66,7 +66,6 @@ body {
   font-size: 16px;
 }
 
-
 .image-class {
   margin: 20px 0;
 }
@@ -86,7 +85,7 @@ body {
 .button-container {
   display: flex;
   align-items: flex-start;
-  padding: 6px 0px;
+  padding: 6px 0;
   justify-content: space-between;
   gap: 15px;
 }
@@ -101,7 +100,6 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 10px;
-  
 }
 
 i.bi-x {
@@ -924,7 +922,7 @@ footer div.icons form > button:focus {
 
   .titles h1 {
     font-size: 32px;
-    font-family:'Roboto', sans-serif ;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
   }
 
