@@ -106,9 +106,9 @@ ${sampleStep[0].Description}
 </p> 
 
 <div class="button-container">
-     <button type="submit">See Live</button>
+<a href="#">See live<img src="Images/Icn.png" alt=""></a>
      
-     <button type="submit">See Source</button>
+<a href="#">See source<img src="Images/water.png" alt=""></a>
 </div>
  </div>
   </div>
