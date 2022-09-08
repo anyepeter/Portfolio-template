@@ -31,7 +31,7 @@ body {
   top: 0;
   left: 0;
   height: 100vh;
-  padding: 2rem 1rem;
+  padding: 50px;
   overflow: scroll;
 }
 
@@ -66,6 +66,7 @@ body {
   font-size: 16px;
 }
 
+
 .image-class {
   margin: 20px 0;
 }
@@ -75,8 +76,8 @@ body {
 }
 
 .element-class p {
-  font-size: 16px;
-  line-height: 1.3rem;
+  font-size: 18px;
+  line-height: 1.9rem;
   margin-bottom: 12px;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
@@ -84,15 +85,23 @@ body {
 
 .button-container {
   display: flex;
+  align-items: flex-start;
+  padding: 6px 0px;
   justify-content: space-between;
+  gap: 15px;
 }
 
-.button-container button {
-  padding: 10px;
-  font-size: 20px;
+.button-container a {
+  padding: 15px;
+  font-size: 17px;
   color: #fff;
   background-color: #ff6b00;
   border: 0;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  
 }
 
 i.bi-x {
@@ -898,18 +907,24 @@ footer div.icons form > button:focus {
   }
 
   .class-container {
-    padding-top: 15px;
+    margin-top: 13px;
+    height: 510px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .titles {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 90px;
+    height: 50px;
   }
 
   .titles h1 {
-    font-size: 52px;
+    font-size: 32px;
+    font-family:'Roboto', sans-serif ;
+    font-weight: 700;
   }
 
   .element-class ul {
@@ -928,7 +943,7 @@ footer div.icons form > button:focus {
   .image-class {
     margin: 20px 0;
     width: 200rem;
-    height: 50vh;
+    height: 500px;
   }
 
   .img-class {
@@ -946,13 +961,13 @@ footer div.icons form > button:focus {
   .button-container {
     display: flex;
     justify-content: flex-start;
-    gap: 10px;
+    gap: 15px;
     margin-top: 2rem;
   }
 
-  .button-container button {
+  .button-container a {
     padding: 10px;
-    font-size: 20px;
+    font-size: 18px;
     color: #fff;
     background-color: #ff6b00;
     border: 0;
@@ -1266,7 +1281,7 @@ footer div.icons form > button:focus {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 90px;
+    height: 50px;
   }
 
   .element-class ul {
@@ -1280,20 +1295,6 @@ footer div.icons form > button:focus {
 
   .parapragh-section {
     display: flex;
-  }
-
-  .element-class p {
-    font-size: 24px;
-    line-height: 2.3rem;
-    margin-bottom: 0;
-  }
-
-  .button-container {
-    padding-top: 2rem;
-  }
-
-  .class-container {
-    width: 150%;
   }
 
   .navbar-container nav li a {
