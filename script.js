@@ -125,7 +125,6 @@ ${sampleStep[0].Description}
   });
 });
 
-
 function removeClass() {
   menu.style.display = 'none';
   existBtn.style.display = 'none';
