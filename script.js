@@ -1,6 +1,10 @@
+const workCards = document.querySelector('.work-container');
+// const cards = document.querySelectorAll(".work-container > div")
+const body = document.querySelector('body');
 const hamburger = document.getElementById('handberga-menu');
 const menu = document.getElementById('menu');
 const existBtn = document.getElementById('exit');
+
 
 function removeClass() {
   menu.style.display = 'none';
