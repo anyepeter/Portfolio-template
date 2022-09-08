@@ -10,7 +10,6 @@ body {
   margin: 0;
 }
 
-/* styling the navbar */
 .intro-container li {
   flex: 1;
   list-style: none;
@@ -24,6 +23,92 @@ body {
   list-style: none;
 }
 
+.popup-container {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 70%);
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  padding: 50px;
+  overflow: scroll;
+}
+
+.element-class {
+  background-color: #fff;
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+}
+
+.titles {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 90px;
+}
+
+.titles h1 {
+  font-size: 32px;
+}
+
+.element-class ul {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.element-class ul li {
+  list-style: none;
+  border: 1px solid #dfe1e6;
+  margin-right: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.image-class {
+  margin: 20px 0;
+}
+
+.img-class {
+  width: 100%;
+}
+
+.element-class p {
+  font-size: 18px;
+  line-height: 1.9rem;
+  margin-bottom: 12px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+.button-container {
+  display: flex;
+  align-items: flex-start;
+  padding: 6px 0;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.button-container a {
+  padding: 15px;
+  font-size: 17px;
+  color: #fff;
+  background-color: #ff6b00;
+  border: 0;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+i.bi-x {
+  font-size: 40px;
+  left: -20px;
+  top: 0;
+}
+
+/* styling the navbar */
 .work-container > div li {
   list-style-type: none;
   padding: 10px;
@@ -87,7 +172,7 @@ body {
   text-decoration: none;
 }
 
-.bi {
+.bistle {
   position: relative;
   top: -20px;
   width: 21px;
@@ -533,7 +618,7 @@ div.icons form > button:hover {
 }
 
 body section.recent-work button:focus,
-body section.work-container > div button:focus,
+body div.work-container > div button:focus,
 body section.about-container div > button:focus,
 footer div.icons form > button:focus {
   background-color: #e05304;
@@ -657,7 +742,7 @@ footer div.icons form > button:focus {
     font-size: 23px;
   }
 
-  section.work-container div h3 {
+  div.work-container div h3 {
     font-size: 39px;
     line-height: 2.5rem;
   }
@@ -800,6 +885,105 @@ footer div.icons form > button:focus {
     position: fixed;
   }
 
+  .popup-container {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 70%);
+    backdrop-filter: blur(3px);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    padding: 4rem 5rem;
+    overflow: scroll;
+  }
+
+  .element-class {
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .class-container {
+    margin-top: 13px;
+    height: 510px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .titles {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+  }
+
+  .titles h1 {
+    font-size: 32px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+  }
+
+  .element-class ul {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .element-class ul li {
+    list-style: none;
+    border: 1px solid #dfe1e6;
+    margin-right: 10px;
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .image-class {
+    margin: 20px 0;
+    width: 200rem;
+    height: 500px;
+  }
+
+  .img-class {
+    width: 100%;
+    height: inherit;
+  }
+
+  .element-class p {
+    font-size: 20px;
+    line-height: 1.9rem;
+    margin-bottom: 12px;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-top: 2rem;
+  }
+
+  .button-container a {
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #ff6b00;
+    border: 0;
+  }
+
+  i.bi-x {
+    font-size: 40px;
+    left: -20px;
+    top: 0;
+  }
+
+  .parapragh-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
   .line {
     margin-top: 50px;
     position: relative;
@@ -858,7 +1042,7 @@ footer div.icons form > button:focus {
     padding-left: 0;
   }
 
-  .bi {
+  .bistle {
     display: none;
   }
 
@@ -893,7 +1077,7 @@ footer div.icons form > button:focus {
     margin-left: 90px;
   }
 
-  section.work-container div p {
+  div.work-container div p {
     font-size: 20px;
     padding-right: 50px;
   }
@@ -993,7 +1177,7 @@ footer div.icons form > button:focus {
     line-height: 2.2rem;
   }
 
-  section.work-container {
+  div.work-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 6px;
@@ -1001,7 +1185,7 @@ footer div.icons form > button:focus {
     padding-bottom: 0;
   }
 
-  section.work-container h3 {
+  div.work-container h3 {
     font-size: 25px;
   }
 
@@ -1016,23 +1200,16 @@ footer div.icons form > button:focus {
     width: 100%;
   }
 
-  section.work-container div button,
-  section.work-container div.gridbox h2,
-  section.work-container div.gridbox p,
-  section.work-container div.gridbox ul {
-    display: none;
-  }
-
   footer div.icons form > button {
     margin-left: 0;
     font-size: 20px;
   }
 
-  section.work-container div.gridbox {
+  div.work-container div.gridbox {
     background-image: url("Images/Placeholder.png");
   }
 
-  section.work-container div.gridbox button {
+  div.work-container div.gridbox button {
     display: block;
     margin-top: 200px;
   }
@@ -1078,6 +1255,45 @@ footer div.icons form > button:focus {
 @media (min-width: 1200px) {
   .navbar-container {
     padding: 0 255px 0 140px;
+  }
+
+  .popup-container {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 70%);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    padding: 10rem 18rem;
+    overflow: scroll;
+  }
+
+  .element-class {
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .titles {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+  }
+
+  .element-class ul {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .element-class ul li {
+    font-size: 20px;
+  }
+
+  .parapragh-section {
+    display: flex;
   }
 
   .navbar-container nav li a {
@@ -1132,7 +1348,7 @@ footer div.icons form > button:focus {
     width: 20%;
   }
 
-  section.work-container {
+  div.work-container {
     padding: 0 200px;
     grid-template-columns: 1fr 1fr 1fr;
   }
