@@ -73,12 +73,12 @@ body {
 .img-class {
   width: 100%;
 }
-.span{
+
+.span {
   color: red;
   font-size: 15px;
   line-height: 2rem;
 }
-
 
 .element-class p {
   font-size: 18px;

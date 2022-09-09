@@ -125,28 +125,23 @@ ${sampleStep[0].Description}
   });
 });
 
-const form = document.getElementById('formMain')
-const mail = document.getElementById('email')
-const message = document.querySelector('span')
+const form = document.getElementById('formMain');
+const mail = document.getElementById('email');
+const message = document.querySelector('span');
 
-form.addEventListener('submit', (even) =>{
-  mail.value;
-   let chackEmail = mail.value.toLowerCase()
-  if(mail.value !== chackEmail || mail.value === "") {
+form.addEventListener('submit', (even) => {
+  const chackEmail = mail.value.toLowerCase();
+  if (mail.value !== chackEmail || mail.value === '') {
     even.preventDefault();
-    message.innerHTML = 'Ivnvalid form. Your email have to be in lowercase'
-  }
-  else {
+    message.innerHTML = 'Ivnvalid form. Your email have to be in lowercase';
+  } else {
     form.submit();
   }
-
-})
+});
 
 mail.addEventListener('click', () => {
-  message.textContent = ''
-})
-
-
+  message.textContent = '';
+});
 
 function removeClass() {
   menu.style.display = 'none';
