@@ -74,6 +74,12 @@ body {
   width: 100%;
 }
 
+.span {
+  color: red;
+  font-size: 15px;
+  line-height: 2rem;
+}
+
 .element-class p {
   font-size: 18px;
   line-height: 1.9rem;
