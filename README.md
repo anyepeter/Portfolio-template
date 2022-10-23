@@ -30,7 +30,7 @@ Open the project in your code editor
 ## Demo 
 Feel free to visit the site here [https://anyepeter.github.io/Portfolio-template/](https://anyepeter.github.io/Portfolio-template/)
 
-## Authors
+## Author
 ANYE PEETR
 
 - GitHub: [@anyepeter](https://github.com/anyepeter)
