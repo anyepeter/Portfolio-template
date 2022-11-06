@@ -19,12 +19,44 @@
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-You will need the following;
-- Web brower for example chrome
-- Code editor for example VS code
-### Setup
+- Basic html, css and medium Javascript know how.
+- Git installation
+- A text editor
+- A terminal
+- A web browser to view output e.g Google Chrome
+- An IDE e.g Visual studio code
+### Setup.
+Clone this repository or download the Zip folder:
+https://github.com/anyepeter/Portfolio-template.git
+
+Navigate to the location of the folder in your machine:
+you@your-Pc-name:~$ cd <folder>
+
+### Usage
+After Cloning this repo to your local machine
+Open the index.html in your browser
+
+### Run Tests.
+To track linter errors locally follow these steps:
+
+Download all the dependencies run:
+
+npm install
+
+Track HTML linter errors run:
+
+npx hint .
+
+Track CSS linter errors run:
+
+npx stylelint "**/*.{css,scss}"
+
+Track JavaScript linter errors run:
+
+npx eslint .
 
 ### Install
+
 Open the project in your code editor
 
 ## Demo 
