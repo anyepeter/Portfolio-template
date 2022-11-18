@@ -11,6 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@300;900&family=Poppins:wght@200;300&family=Roboto:ital,wght@0,300;1,500&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 
@@ -19,12 +20,13 @@
 
 <body>
     <header class="navbar-container">
-        <nav>
-            <a class="logo-item" href="index.html">Peter chendi</a>
+        <nav class="navbar-section">
+            <a class="logo-item" href="index.html">Peter Chendi</a>
 
-            <img id="handberga-menu"  class="handberga" src="Images/Icons/Union.png" alt="menu">
+             <div class="handberga"> <img id="handberga-menu" class="menu-button"  src="Images/Icons/Union.png" alt="menu"></div>
+           
         
-            <ul id="menu">
+            <ul id="menu" class="menu">
                 <li class="menu-list"><i id="exit" class="bi bi-x-lg bistle"></i></li>
                 <li><a href="#home">Portfolio</a></li>
                 <li><a href="#about">About</a></li>
@@ -37,9 +39,9 @@
 
     <section id="home" class="intro-container">
         <div class="intro-text">
-            <h1>Hey there. I'm Chendi</h1>
-            <h2>I'am a Software Developer</h2>
-            <p>
+            <h1 class="main-title">Hey there. I'm Chendi</h1>
+            <h2 class="intro-heading">I'am a Software Developer</h2>
+            <p class="intro-paragraph">
                 I can help you build a product , feature or website Look
                 through some of my work and experience! If you like what
                 you see and have a project you need coded,
@@ -47,7 +49,7 @@
             </p>
         </div>
         <div class="intro-icons">
-            <ul>
+            <ul class="icons-link-section">
                 <li><a href="#"><img src="Images/Icons/NormalButton/Tertiary/Icons/github-icon.png"
                             alt="github-icon"></a></li>
                 <li><a href="#"><img src="Images/Icons/Icon-Linkedin.png" alt="linkedin icon"></a></li>
@@ -59,9 +61,9 @@
         </div>
     </section>
     <section class="recent-work">
-        <h2>My recent works</h2>
+        <h2 class="recent-work-title">My recent works</h2>
 
-        <hr>
+        <hr class="line">
         <div class="recent-blog">
             <div class="recent-image">
                 <img src="Images/worksection/hero-image.png" alt="Recent project">
