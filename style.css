@@ -23,6 +23,7 @@
   /*padding*/
   --box-pd: 0 1.5rem;
   --padding-top: 9rem;
+  --padding-cards: 0 1.5rem;
  }
 
  /*==================================
@@ -40,7 +41,7 @@
   height: 55px;
   background-color: var(--bg-navbar);
   position: fixed;
-  top: 0;
+  top:0px;
   padding:var(--box-pd);
  }
 
@@ -232,6 +233,71 @@ justify-content: space-between;
   background-color: var(--secondary-clr);
   color:#fff;
   border: none;
+ }
+
+ /*==================================
+ Mobile version work section
+ ===================================*/
+
+ .work-container{
+  height: auto;
+  width: 100%;
+  padding: var(--box-pd);
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  
+ }
+
+ .card-container{
+ display: flex;
+ width: 100%;
+ font-family: var(--ff-text);
+ height: auto;
+ flex-direction: column;
+ justify-content: flex-end;
+ padding-top: 3rem;
+ color:#fff;
+ gap: 1rem;
+
+ }
+
+ .card-title{
+  font-size: 32px;
+  font-family: var(--ff-headings);
+  line-height: 2rem;
+  padding: var(--padding-cards);
+ }
+
+ .card-description{
+padding: var(--padding-cards);
+font-size: 18px;
+ }
+
+ .card-tech{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  list-style: none;
+  gap: 0.5rem 1rem;
+  padding: var(--padding-cards);
+  width: 17rem;
+  height: auto;
+  justify-content: space-around;
+  align-items: center;
+ }
+
+ .card-tech li{
+padding: 10px;
+background: rgba(255, 255, 255, 0.24);
+ }
+
+ .button{
+ color: #fff;
+ padding: 10px;
+ font-size: 20px;
+ background-color: var(--secondary-clr);
+ border: none;
  }
 /* 
 * {
