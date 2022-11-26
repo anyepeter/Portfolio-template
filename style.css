@@ -260,7 +260,6 @@ justify-content: space-between;
  color:#fff;
  gap: 1rem;
  background-repeat: no-repeat;
-
  }
 
  .card-title{
@@ -493,6 +492,110 @@ textarea{
     padding: 2rem 6rem;
   }
  }
+
+  /*==================================
+ Tablet version view
+ ===================================*/
+@media (min-width: 768px) {
+  .main-title{
+    font-size: 62px;
+    width: 20rem;
+    line-height: 4rem;
+  }
+
+  .intro-heading{
+    font-size: 42px;
+  }
+
+  .intro-paragraph{
+    font-size: 22px;
+    line-height: 2rem;
+    width: 80%;
+  }
+
+  .icons-link-section{
+    width: 18rem;
+  }
+
+  .intro-container{
+    background-position-y:100%;
+    background-size: 15.5rem;
+  }
+
+  .logo-item{
+    font-size: 28px;
+  }
+
+  .recent-work-title{
+    font-size: 42px;
+  }
+
+  .recent-image{
+    display: flex;
+    justify-content: center;
+  }
+
+  .recent-blog img {
+    width: 90%;
+  }
+
+  .title-heading{
+    font-size: 38px;
+  }
+  .text{
+    font-size: 28px;
+    line-height: 2.5rem;
+  }
+
+  .language-container{
+    width: auto;
+    justify-content: flex-start;
+    gap: 2rem;
+  }
+
+  .language-container li{
+   font-size: 24px;
+  }
+
+  .recentBtn{
+    font-size: 25px;
+    width: 10rem;
+    margin-top: 1rem;
+  }
+
+  .work-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card-title{
+    font-size: 38px;
+    margin-top: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .card-description{
+    font-size: 20px;
+  }
+
+  .card-tech{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  }
+
+  .card-tech li{
+    text-align: center;
+  }
+
+  .card-tech li{
+    font-size: 20px;
+  }
+
+  .button{
+    font-size: 25px;
+  }
+}
 
 /* 
 
