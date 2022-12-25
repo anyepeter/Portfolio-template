@@ -2,7 +2,7 @@
 
 # Portfolio 
 
-> Creating a portfolio template from scratch.
+> Create a portfolio template to display my past and current projects 
 
 
 ## Built With
