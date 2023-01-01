@@ -497,6 +497,25 @@ textarea{
  Tablet version view
  ===================================*/
 @media (min-width: 768px) {
+
+  .menu{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    list-style: none;
+    gap: 2rem;
+   }
+
+   .menu a{
+    text-decoration: none;
+    color:var(--bg-section);
+    font-family: var(--ff-text) ;
+   }
+
+   .handberga, .menu-list{
+    display: none;
+   }
+
   .main-title{
     font-size: 62px;
     width: 20rem;
@@ -519,7 +538,7 @@ textarea{
 
   .intro-container{
     background-position-y:100%;
-    background-size: 15.5rem;
+    background-size: 20.5rem;
   }
 
   .logo-item{
@@ -595,6 +614,15 @@ textarea{
   .button{
     font-size: 25px;
   }
+}
+
+@media (min-width: 1000px) {
+ .main-title{
+  font-size: 72px;
+    width: 25rem;
+    line-height: 5rem;
+ }
+
 }
 
 /* 
