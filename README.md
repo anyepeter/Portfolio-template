@@ -4,7 +4,6 @@
 
 > Creating a portfolio template to show my projects I have been working on, my resume and other things about me from scratch.
 
-
 ## Built With
 
 - Major languages
