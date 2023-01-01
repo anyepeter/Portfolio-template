@@ -51,17 +51,20 @@ const projectCards = [
 
 projectCards.forEach((card) => {
   const content = `
-  <div>
-  <h3>${card.Name}</h3>
+  <div class="card-container" style="background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(${card.image})">
+  <h3 class="card-title">${card.Name}</h3>
 
-  <p>${card.Description}</p>
+  <p class="card-description">${card.Description}</p>
 
-  <ul>
+  <ul class="card-tech">
       <li>${card.Tech[0]}</li>
       <li>${card.Tech[1]}</li>
       <li>${card.Tech[2]}</li>
+      <li>${card.Tech[3]}</li>
+      
   </ul>
-  <button id="sampleproject" type="button">${card.button}</button>
+  <button class="button" id="sampleproject" type="button">${card.button}</button>
+  
 </div>
   `;
   workCards.innerHTML += content;

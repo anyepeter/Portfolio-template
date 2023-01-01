@@ -11,6 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@300;900&family=Poppins:wght@200;300&family=Roboto:ital,wght@0,300;1,500&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 
@@ -19,12 +20,13 @@
 
 <body>
     <header class="navbar-container">
-        <nav>
-            <a class="logo-item" href="index.html">Peter chendi</a>
+        <nav class="navbar-section">
+            <a class="logo-item" href="index.html">Peter Chendi</a>
 
-            <img id="handberga-menu"  class="handberga" src="Images/Icons/Union.png" alt="menu">
+             <div class="handberga"> <img id="handberga-menu" class="menu-button"  src="Images/Icons/Union.png" alt="menu"></div>
+           
         
-            <ul id="menu">
+            <ul id="menu" class="menu">
                 <li class="menu-list"><i id="exit" class="bi bi-x-lg bistle"></i></li>
                 <li><a href="#home">Portfolio</a></li>
                 <li><a href="#about">About</a></li>
@@ -37,9 +39,9 @@
 
     <section id="home" class="intro-container">
         <div class="intro-text">
-            <h1>Hey there. I'm Chendi</h1>
-            <h2>I'am a Software Developer</h2>
-            <p>
+            <h1 class="main-title">Hey there. I'm Chendi</h1>
+            <h2 class="intro-heading">I'am a Software Developer</h2>
+            <p class="intro-paragraph">
                 I can help you build a product , feature or website Look
                 through some of my work and experience! If you like what
                 you see and have a project you need coded,
@@ -47,34 +49,34 @@
             </p>
         </div>
         <div class="intro-icons">
-            <ul>
-                <li><a href="#"><img src="Images/Icons/NormalButton/Tertiary/Icons/github-icon.png"
+            <ul class="icons-link-section">
+                <li><a href="https://github.com/anyepeter"><img src="Images/Icons/NormalButton/Tertiary/Icons/github-icon.png"
                             alt="github-icon"></a></li>
-                <li><a href="#"><img src="Images/Icons/Icon-Linkedin.png" alt="linkedin icon"></a></li>
-                <li><a href="#"><img src="Images/Icons/hand-icon.png" alt="soclai media icons"></a></li>
-                <li><a href="#"><img src="Images/Icons/NormalButton/Tertiary/Icons/twitter-icon.png"
+                <li><a href="https://www.linkedin.com/in/peter-chendi/"><img src="Images/Icons/Icon-Linkedin.png" alt="linkedin icon"></a></li>
+                <li><a href="https://apcode.hashnode.dev/"><img src="Images/Icons/hand-icon.png" alt="soclai media icons"></a></li>
+                <li><a href="https://twitter.com/anye_peter"><img src="Images/Icons/NormalButton/Tertiary/Icons/twitter-icon.png"
                             alt="twitter-icon"></a></li>
                 <li><a href="#"><img src="Images/Icons/medium-icon.png" alt="medium-icon"></a></li>
             </ul>
         </div>
     </section>
     <section class="recent-work">
-        <h2>My recent works</h2>
+        <h2 class="recent-work-title">My recent works</h2>
 
-        <hr>
+        <hr class="line">
         <div class="recent-blog">
             <div class="recent-image">
                 <img src="Images/worksection/hero-image.png" alt="Recent project">
             </div>
             <div class="recent-text">
-                <h3>Multi-Post Stories</h3>
+                <h3 class="title-heading">Multi-Post Stories</h3>
 
                 <p class="text">A daily selection of privately personalized reads; no accounts or
                     sign-ups required. has been the industry's standard dummy
                     text ever since the 1500s, when an unknown printer took a
                     standard dummy text.</p>
 
-                <ul>
+                <ul class="language-container">
                     <li>css</li>
                     <li>html</li>
                     <li>bootstrap</li>
@@ -89,18 +91,23 @@
     </div>
 
     <section id="about" class="about-container">
-        <div>
-            <h2>About me</h2>
-            <p>Hello I'm a software developer! I can help you
+        <div class="about-details">
+            <h2 class="about-title">About me</h2>
+            <p class="about-description">Hello I'm a software developer! I can help you
                 build a product , feature or website Look
                 through some of my work and experience! If you
                 like what you see and have a project you need
                 coded, don't hestiate to contact me.</p>
 
-            <button type="button">Get My Resume</button>
-
-            <hr>
+            <button class="about-button" type="button">Get My Resume</button>
+            <div class="about-image-container">
+                <img class="about-image" src="Images/Aboutsection/Group.png">
+            </div>
+           
         </div>
+            <hr class="about-line">
+    
+    </section>
         <div class="skill-section">
             <ul>
                 <li class="frames-title"><img src="Images/Aboutsection/diamond.png" alt="diamond">Language</li>
@@ -126,10 +133,10 @@
                 <li>terminal</li>
             </ul>
         </div>
-    </section>
+    
 
     <footer id="contact">
-        <div class="icons">
+        <div class="contact-form">
             <h2 class="attract">
                 I'm always interested in hearing about new projects, so if you'd like to chat please get in touch
             </h2>
@@ -153,21 +160,20 @@
 
                 </label>
                 <span class="span"></span>
-                <button type="submit">
+                <button class="form-button" type="submit">
                     Get in touch
                 </button>
             </form>
         </div>
-        <hr class="line">
-        <div class="icons">
-            <ul>
+        <hr class="lines">
+            <ul class="icons">
                 <li><a><img src="./Images/githubblack.png" alt="Github logo"></a></li>
                 <li><a href="index.html"><img src="./Images/linkblack.png" alt="linkblack logo"></a></li>
                 <li><a><img src="./Images/handblack.png" alt="handblack logo"></a></li>
                 <li><a><img src="./Images/mediumblack.png" alt="mediumblackl logo"></a></li>
                 <li><a><img src="./Images/twitterblack.png" alt="twitterblack logo"></a></li>
             </ul>
-        </div>
+        
      
     </footer>
 <script src="script.js"></script>

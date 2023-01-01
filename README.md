@@ -2,8 +2,7 @@
 
 # Portfolio 
 
-> Create a portfolio template to display my past and current projects 
-
+> Creating a portfolio template to show my projects I have been working on, my resume and other things about me from scratch.
 
 ## Built With
 
